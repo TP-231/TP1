@@ -1,5 +1,6 @@
 #include "Ques 2,6.h"
 #include "Ques 3,5.h"
+#include "Ques 8,9.h"
 #include <stdio.h>
 
 int main(){
@@ -20,6 +21,12 @@ int main(){
         	Trier();
         case 7:
         	Inverser();
+        	break;
+        case 8:
+        	ProduitVect();
+        	break;
+        case 9:
+        	ProduitMatriceVecteur();
         	break;
         case 10:
         	return 0;
