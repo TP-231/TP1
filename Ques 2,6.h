@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int ProdMat(){
 	int mat1[2][2] = {{1 , 2},{3 , 4}}, mat2[2][2] = {{5 , 6},{7 , 8}}, mat3[2][2], i, j;
 	
