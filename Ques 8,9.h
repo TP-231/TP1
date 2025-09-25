@@ -1,19 +1,4 @@
-/*#include <stdio.h>
-
-// Définition de la structure pour un vecteur 3D
-
-// Fonction pour calculer le produit vectoriel de deux vecteurs
-Vecteur produitVectoriel(Vecteur u, Vecteur v) {
-    Vecteur w;
-    w.x = u.y * v.z - u.z * v.y;
-    w.y = u.z * v.x - u.x * v.z;
-    w.z = u.x * v.y - u.y * v.x;
-    return w;
-}
-#define LIGNES 2
-#define COLONNES 3
-
-// ...existing code...*/
+#include <stdio.h>
 
 void ProduitVect() {
     typedef struct Vecteur{
@@ -69,5 +54,3 @@ void ProduitMatriceVecteur() {
         printf("%d\n", resultat[i]);
     }
 }
-
-// ...existing code...

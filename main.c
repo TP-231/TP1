@@ -1,6 +1,8 @@
+#include "Ques 1,7.h"
 #include "Ques 2,6.h"
 #include "Ques 3,5.h"
 #include "Ques 8,9.h"
+#include "Ques 5.h"
 #include <stdio.h>
 
 int main(){
@@ -16,6 +18,15 @@ int main(){
             break;
         case 2:
             Median();
+            break;
+        case 3:
+            SomMat();
+            break;
+        case 4: 
+            Recherche();
+            break;
+        case 5:
+            MulIncr();
             break;
         case 6:
         	Trier();

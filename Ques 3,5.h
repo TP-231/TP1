@@ -19,30 +19,32 @@ return 0;
 return 1;
 }
 
-void Inverser() {
-    int n;
+void Recherche() {
+    int n, element, i, found = 0;
+
     printf("Entrez la taille du tableau: ");
     scanf("%d", &n);
 
-    int tableau[n];
-    for (int i = 0; i < n; i++) {
-        printf("Entrer l'element %d du tableau: ", i + 1);
-        scanf("%d", &tableau[i]);
+    int tab[n];
+    printf("Entrez les elements du tableau:\n");
+    for(i = 0; i < n; i++) {
+        printf("tab[%d] = ", i);
+        scanf("%d", &tab[i]);
     }
 
-    int g = 0;
-    int d = n - 1;
-    while (g < d) {
-        int tmp = tableau[g];
-        tableau[g] = tableau[d];
-        tableau[d] = tmp;
-        g++;
-        d--;
+    printf("Entrez l'element a rechercher: ");
+    scanf("%d", &element);
+
+    for(i = 0; i < n; i++) {
+        if(tab[i] == element) {
+            printf("Element trouve a la position %d\n", i);
+            found = 1;
+            break;
+        }
     }
 
-    printf("Tableau inverse: ");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", tableau[i]);
+    if(!found) {
+        printf("Element non trouve dans le tableau\n");
     }
-    printf("\n");
 }
+
